@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.LogupActivity"
+    android:background="@drawable/anh3">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+
+        android:text="Đăng Ký"
+        android:textSize="16dp"
+        android:gravity="center"
+        android:textColor="#ffff"
+        android:id="@+id/textView" />
+    <ImageView
+        android:layout_marginTop="2dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/iconnext0"
+        android:id="@+id/tvhd"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="295dp"
+        android:background="@drawable/bovienrelay"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp">
+        <EditText
+
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/name"
+            android:hint="Tên* "
+            android:textSize="16dp"
+            android:textStyle="italic"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/name"
+            android:id="@+id/email"
+            android:hint="Email*"
+            android:textSize="16dp"
+            android:textStyle="italic"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"/>
+        <EditText
+            android:inputType="textPassword"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/pass"
+            android:hint="Mật Khẩu*"
+            android:layout_below="@+id/email"
+            android:textSize="16dp"
+            android:textStyle="italic"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/pass"
+            android:id="@+id/sdt"
+            android:hint="Sđt*"
+            android:textSize="16dp"
+            android:textStyle="italic"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/sdt"
+            android:id="@+id/diachi"
+            android:hint="Địa Chỉ*"
+            android:textSize="16dp"
+            android:textStyle="italic"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+
+            />
+        <Button
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/bovien"
+            android:text="Đăng Ký"
+            android:textColor="#ffff"
+            android:layout_below="@+id/diachi"
+            android:id="@+id/dangky"
+            android:textSize="18dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"/>
+    </RelativeLayout>
+    <TextView
+        android:layout_width="240dp"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:textColor="#ffff"
+        android:textSize="12dp"
+        android:text="Nếu quý khách đã là thành viên?Đăng nhập"
+        android:id="@+id/dangnhap"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

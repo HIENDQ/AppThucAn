@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MenuActivity">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:weightSum="10"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#f70808"
+        android:id="@+id/sdsd">
+        <ImageView
+            android:padding="3dp"
+            android:layout_weight="4.5"
+            android:id="@+id/trove"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/iconnext0" />
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/tennhahang"
+            android:paddingTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Nhà Hàng A"
+            android:textSize="25dp"
+            android:gravity="center"/>
+        <ImageView
+            android:src="@drawable/anhgiohang"
+            android:padding="1dp"
+            android:layout_weight="4.5"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/sdsd"
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        android:id="@+id/sa">
+        <TextView
+            android:paddingTop="5dp"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Thực Dơn:"
+            android:textSize="20dp"
+            android:id="@+id/th"/>
+        <ListView
+
+            android:id="@+id/listviewthucdon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </ListView>
+
+    </LinearLayout>
+
+
+
+
+
+
+</RelativeLayout>

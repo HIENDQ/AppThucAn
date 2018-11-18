@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.LoginActivity"
+    android:background="@drawable/anh6">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:text="Đăng nhập"
+        android:textSize="16dp"
+        android:gravity="center"
+        android:textColor="#ffff"
+        android:id="@+id/textView" />
+    <ImageView
+        android:layout_marginTop="2dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/iconnext0"
+        android:id="@+id/toreturn"/>
+
+
+    <LinearLayout
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="205dp"
+        android:background="@drawable/bovienrelay"
+        android:layout_margin="15dp"
+        android:orientation="vertical"
+        android:id="@+id/relativeLayout">
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:layout_marginTop="25dp"
+                android:id="@+id/emaildangnhap"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:hint="Email*"
+                android:inputType="textEmailAddress"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="16dp"
+                android:textStyle="italic" />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/passdangnhap"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:hint="Mật khẩu"
+                android:inputType="textPassword"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="16dp"
+                android:textStyle="italic"
+                />
+        </android.support.design.widget.TextInputLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/button_dangnhap"
+            android:text="Đăng Nhập"
+            android:textSize="18dp"
+            android:background="@drawable/bovien"
+            android:layout_marginTop="0dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            />
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="240dp"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:textColor="#ffff"
+        android:text="Nếu quý khách chưa có tài khoản?Đăng ký"
+        android:textSize="12dp"
+        android:id="@+id/chuyendangky"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
